@@ -1,0 +1,342 @@
+[
+  {
+    "question_id": "alex-indie-bookstore-a",
+    "suite": "ak",
+    "scope": "A",
+    "event_id": "indie-bookstore-final-reversal",
+    "question": "What is Alex's current attitude toward indie bookstores?",
+    "options": {
+      "A": "She prefers them more than ever because close relationships with local authors create welcome obligations.",
+      "B": "They are no longer an ideal fit because intense personal connections and expectations interfere with relaxed browsing.",
+      "C": "She has permanently stopped visiting every place that sells books.",
+      "D": "She explicitly prefers large chain bookstores and rejects all local literary spaces."
+    },
+    "correct_answer": "B",
+    "evidence_indices": [26, 49, 78, 80, 145],
+    "target_error": "multi-stage preference reversal",
+    "entity_queries": ["indie_bookstores", "book_browsing", "local_authors", "social_expectations", "literary_community"]
+  },
+  {
+    "question_id": "alex-indie-bookstore-k",
+    "suite": "ak",
+    "scope": "K",
+    "event_id": "indie-bookstore-final-reversal",
+    "question": "Which preference remains valid outside Alex's change of attitude toward indie bookstores?",
+    "options": {
+      "A": "She now prefers large chain bookstores, as she explicitly confirmed after leaving indie bookstores.",
+      "B": "She no longer values local authors, libraries, literacy programs, or literary communities of any kind.",
+      "C": "She can still value libraries, literacy outreach, local authors, and literary community involvement in lower-pressure settings.",
+      "D": "She wants every book-browsing experience to involve stronger personal obligations."
+    },
+    "correct_answer": "C",
+    "evidence_indices": [21, 67, 84, 89, 145, 147, 149],
+    "target_error": "indie-bookstore revision expanded to all local literary activity",
+    "entity_queries": ["indie_bookstores", "local_library", "literacy_programs", "local_authors", "literary_community"]
+  },
+  {
+    "question_id": "alex-book-blog-a",
+    "suite": "ak",
+    "scope": "A",
+    "event_id": "book-blog-emotional-reengagement",
+    "question": "What is Alex's current attitude toward book blogging?",
+    "options": {
+      "A": "She still regards every form of book blogging as a chore and has not restarted it.",
+      "B": "She restarted the blog only to publish rigid summaries that avoid personal emotion.",
+      "C": "She has restarted the blog with a focus on emotional responses to literature and finds that it supports reflection and self-understanding.",
+      "D": "She has stopped writing about books and now communicates only through shopping forums."
+    },
+    "correct_answer": "C",
+    "evidence_indices": [32, 51, 72, 150, 152],
+    "target_error": "later positive revision omitted",
+    "entity_queries": ["book_blogging", "emotional_reflection", "reading_experiences", "self_understanding", "literary_writing"]
+  },
+  {
+    "question_id": "alex-book-blog-k",
+    "suite": "ak",
+    "scope": "K",
+    "event_id": "book-blog-emotional-reengagement",
+    "question": "What should not be inferred from Alex restarting an emotionally focused book blog?",
+    "options": {
+      "A": "She has found a personally meaningful way to write about emotional responses to books.",
+      "B": "She has necessarily resumed rigid, formula-driven book reviews and no longer finds that format creatively limiting.",
+      "C": "Writing can help her process emotions connected to reading experiences.",
+      "D": "Her current blogging approach differs from the pressured form that previously felt like a chore."
+    },
+    "correct_answer": "B",
+    "evidence_indices": [32, 51, 53, 150, 152],
+    "target_error": "book blog conflated with formal book reviews",
+    "entity_queries": ["book_blogging", "formal_book_reviews", "creative_expression", "emotional_reflection", "literary_discussion"]
+  },
+  {
+    "question_id": "alex-reading-marathon-a",
+    "suite": "ak",
+    "scope": "A",
+    "event_id": "reading-marathon-final-withdrawal",
+    "question": "Does Alex currently want to join future reading marathons?",
+    "options": {
+      "A": "No. She opted out because keeping pace felt overwhelming and she prefers reading leisurely at her own pace.",
+      "B": "Yes. The charity marathon proved that every future marathon will suit her.",
+      "C": "Yes. She mainly enjoys racing through books under strict deadlines.",
+      "D": "The conversation never states a current preference about future marathons."
+    },
+    "correct_answer": "A",
+    "evidence_indices": [28, 38, 63, 76],
+    "target_error": "temporary positive exception overriding later withdrawal",
+    "entity_queries": ["reading_marathons", "reading_challenges", "deadline_pressure", "leisurely_reading", "reading_pace"]
+  },
+  {
+    "question_id": "alex-reading-marathon-k",
+    "suite": "ak",
+    "scope": "K",
+    "event_id": "reading-marathon-final-withdrawal",
+    "question": "What remains valid after Alex opts out of future reading marathons?",
+    "options": {
+      "A": "She must stop volunteering because all community activity creates the same pressure as a marathon.",
+      "B": "She rejects every shared literary activity and wants no contact with other readers.",
+      "C": "She considers the earlier charity event worthless because her final choice changed.",
+      "D": "She can still value charity, community service, libraries, and shared literary experiences even though the marathon format no longer suits her."
+    },
+    "correct_answer": "D",
+    "evidence_indices": [63, 76, 147, 149],
+    "target_error": "marathon withdrawal generalized to community disengagement",
+    "entity_queries": ["reading_marathons", "charity", "community_service", "library_volunteering", "shared_reading"]
+  },
+  {
+    "question_id": "alex-structured-book-club-a",
+    "suite": "ak",
+    "scope": "A",
+    "event_id": "classic-literature-versus-structured-club",
+    "question": "What is Alex's final preference regarding structured book clubs?",
+    "options": {
+      "A": "She wants a stricter schedule and more formal discussion obligations.",
+      "B": "She is stepping back because rigidity, deadlines, and discussion obligations reduce the joy of reading.",
+      "C": "She is joining additional structured clubs because she dislikes reading independently.",
+      "D": "She has rejected books and literary discussion entirely."
+    },
+    "correct_answer": "B",
+    "evidence_indices": [59, 94, 96, 155, 157, 168, 170],
+    "target_error": "final activity-format revision omitted",
+    "entity_queries": ["structured_book_clubs", "classic_literature", "reading_schedule", "discussion_obligations", "leisurely_reading"]
+  },
+  {
+    "question_id": "alex-structured-book-club-k",
+    "suite": "ak",
+    "scope": "K",
+    "event_id": "classic-literature-versus-structured-club",
+    "question": "Does stepping back from structured book clubs mean Alex now dislikes classic literature?",
+    "options": {
+      "A": "Yes. Her final decision erases her appreciation for classic works and Moby Dick.",
+      "B": "Yes. She also rejected every informal conversation about books.",
+      "C": "No. She can retain appreciation for classic literature and insightful discussion while rejecting the rigid club format.",
+      "D": "No, because she has replaced classic literature with technology shopping and no longer reads books."
+    },
+    "correct_answer": "C",
+    "evidence_indices": [34, 94, 96, 155, 157, 168],
+    "target_error": "structured-setting rejection expanded to content-domain rejection",
+    "entity_queries": ["classic_literature", "moby_dick", "structured_book_clubs", "informal_discussion", "literary_appreciation"]
+  },
+  {
+    "question_id": "alex-storytelling-podcast-a",
+    "suite": "ak",
+    "scope": "A",
+    "event_id": "storytelling-podcast-reengagement",
+    "question": "What is Alex's current attitude toward literary podcasts?",
+    "options": {
+      "A": "She rejects all podcasts and has not listened to another one since stopping book podcasts.",
+      "B": "She likes podcasts only when they avoid literature, authors, and writing advice.",
+      "C": "She passively tolerates podcasts but would never participate in one herself.",
+      "D": "She enjoys a storytelling podcast that combines literature with writing advice and has also hosted an author episode."
+    },
+    "correct_answer": "D",
+    "evidence_indices": [17, 61, 92, 158, 160],
+    "target_error": "medium-level dislike retained after conditional reengagement",
+    "entity_queries": ["literary_podcasts", "storytelling", "writing_advice", "author_interviews", "podcast_hosting"]
+  },
+  {
+    "question_id": "alex-storytelling-podcast-k",
+    "suite": "ak",
+    "scope": "K",
+    "event_id": "storytelling-podcast-reengagement",
+    "question": "Which condition remains important despite Alex's renewed podcast interest?",
+    "options": {
+      "A": "Every podcast is equally satisfying as long as it discusses a book.",
+      "B": "She still values depth, substantive exploration, and genuine dialogue rather than shallow or detached discussion.",
+      "C": "She now prefers passive listening and no longer values conversations with authors.",
+      "D": "She wants podcasts to replace every in-person literary conversation."
+    },
+    "correct_answer": "B",
+    "evidence_indices": [92, 158, 160],
+    "target_error": "quality condition erased by positive medium update",
+    "entity_queries": ["literary_podcasts", "substantive_dialogue", "storytelling", "writing_advice", "author_interviews"]
+  },
+  {
+    "question_id": "alex-book-merchandise-a",
+    "suite": "ak",
+    "scope": "A",
+    "event_id": "book-merchandise-collaborative-return",
+    "question": "What is Alex's current attitude toward creating book-themed merchandise?",
+    "options": {
+      "A": "She permanently abandoned all merchandise after taking a break.",
+      "B": "She creates only generic products unrelated to literature and avoids collaboration.",
+      "C": "She is enthusiastic about custom bookmarks and collaborative book-themed products made with local artists for community events.",
+      "D": "She now considers every type of solo mass production effortless and pressure-free."
+    },
+    "correct_answer": "C",
+    "evidence_indices": [36, 55, 57, 82, 153, 162, 164],
+    "target_error": "conditional creative reengagement omitted",
+    "entity_queries": ["book_merchandise", "custom_bookmarks", "local_artists", "creative_collaboration", "community_events"]
+  },
+  {
+    "question_id": "alex-book-merchandise-k",
+    "suite": "ak",
+    "scope": "K",
+    "event_id": "book-merchandise-collaborative-return",
+    "question": "What should remain in memory after Alex returns to merchandise through collaboration?",
+    "options": {
+      "A": "Her earlier concerns about demand, quality, pressure, and authenticity remain relevant conditions on how the work should be organized.",
+      "B": "The collaboration proves that all solo merchandise production now suits her equally well.",
+      "C": "She no longer cares whether the products reflect her values or creative vision.",
+      "D": "She rejected local artists and intends to do every part of production alone."
+    },
+    "correct_answer": "A",
+    "evidence_indices": [82, 153, 162, 164],
+    "target_error": "earlier production constraints erased by later success",
+    "entity_queries": ["book_merchandise", "production_pressure", "quality", "authenticity", "local_artist_collaboration"]
+  },
+  {
+    "question_id": "alex-recommendation-format-a",
+    "suite": "ak",
+    "scope": "A",
+    "event_id": "formal-lists-to-personalized-dialogue",
+    "question": "How does Alex currently prefer to recommend books?",
+    "options": {
+      "A": "By publishing the same formal list for everyone regardless of their interests.",
+      "B": "By making personalized recommendations during live discussion instead of curating static formal lists.",
+      "C": "By avoiding every conversation about books and refusing to suggest titles.",
+      "D": "By selecting books only according to sales rankings and discount codes."
+    },
+    "correct_answer": "B",
+    "evidence_indices": [17, 19, 21, 65],
+    "target_error": "recommendation-format revision",
+    "entity_queries": ["formal_book_lists", "personalized_recommendations", "literary_discussion", "reader_preferences", "book_curation"]
+  },
+  {
+    "question_id": "alex-recommendation-format-k",
+    "suite": "ak",
+    "scope": "K",
+    "event_id": "formal-lists-to-personalized-dialogue",
+    "question": "What remains unchanged when Alex stops curating formal book lists?",
+    "options": {
+      "A": "She no longer wants other people to discover books.",
+      "B": "She has stopped helping readers because all recommendations feel like a chore.",
+      "C": "She now believes that recommendations should never reflect an individual's interests.",
+      "D": "She still enjoys helping readers discover books and sharing recommendations; only the delivery format changed."
+    },
+    "correct_answer": "D",
+    "evidence_indices": [19, 21, 65],
+    "target_error": "format update expanded to goal deletion",
+    "entity_queries": ["personalized_recommendations", "reader_support", "book_discovery", "formal_book_lists", "literary_community"]
+  },
+  {
+    "question_id": "alex-large-literature-festival-a",
+    "suite": "ak",
+    "scope": "A",
+    "event_id": "large-literature-festival-withdrawal",
+    "question": "Would Alex currently choose another large literature festival?",
+    "options": {
+      "A": "Yes. She considers crowds and long lines the most enjoyable part of literary events.",
+      "B": "Yes. Her first positive festival experience means her later concerns no longer apply.",
+      "C": "Probably not. She plans to skip large festivals because crowds, chaos, and long lines prevent meaningful engagement.",
+      "D": "No. She has permanently rejected authors, books, interviews, and every cultural event."
+    },
+    "correct_answer": "C",
+    "evidence_indices": [7, 87],
+    "target_error": "earlier positive event overriding later withdrawal",
+    "entity_queries": ["literature_festivals", "crowds", "long_lines", "author_events", "meaningful_engagement"]
+  },
+  {
+    "question_id": "alex-large-literature-festival-k",
+    "suite": "ak",
+    "scope": "K",
+    "event_id": "large-literature-festival-withdrawal",
+    "question": "Which interest remains valid despite Alex avoiding large literature festivals?",
+    "options": {
+      "A": "She prefers the largest and most crowded events over every smaller venue.",
+      "B": "She still values author interaction, interviews, literary learning, and smaller or more focused community events.",
+      "C": "She no longer wants to hear authors discuss their creative process.",
+      "D": "She avoids every event that involves literature or community participation."
+    },
+    "correct_answer": "B",
+    "evidence_indices": [15, 67, 84, 87, 147, 149, 160],
+    "target_error": "large-event rejection generalized to all literary events",
+    "entity_queries": ["author_interviews", "small_literary_events", "literary_learning", "community_events", "literature_festivals"]
+  },
+  {
+    "question_id": "alex-sustainability-research-a",
+    "suite": "ak",
+    "scope": "A",
+    "event_id": "sustainable-values-versus-research-burden",
+    "question": "How does Alex feel about personally conducting detailed sustainability research on brands?",
+    "options": {
+      "A": "She finds it complicated and overwhelming because jargon, statistics, certifications, and marketing claims are difficult to evaluate.",
+      "B": "She finds the research effortless and wants every purchase to involve a full supply-chain audit.",
+      "C": "She refuses to consider environmental information because sustainability has no value to her.",
+      "D": "The conversation contains no evidence about the difficulty of sustainability research."
+    },
+    "correct_answer": "A",
+    "evidence_indices": [104, 122],
+    "target_error": "verification burden represented as value rejection",
+    "entity_queries": ["sustainability_research", "sustainable_brands", "brand_certifications", "greenwashing", "consumer_decisions"]
+  },
+  {
+    "question_id": "alex-sustainability-research-k",
+    "suite": "ak",
+    "scope": "K",
+    "event_id": "sustainable-values-versus-research-burden",
+    "question": "Does difficulty researching sustainability mean Alex no longer values sustainable products?",
+    "options": {
+      "A": "Yes. Research difficulty proves she now prefers wasteful packaging and unsustainable materials.",
+      "B": "Yes. She explicitly rejected organic materials and environmentally responsible brands.",
+      "C": "No. She remains interested in sustainable brands, organic materials, and low-waste packaging even though verification is difficult.",
+      "D": "No, because she has stopped shopping and no longer makes consumer decisions."
+    },
+    "correct_answer": "C",
+    "evidence_indices": [104, 122],
+    "target_error": "stable environmental value erased by process difficulty",
+    "entity_queries": ["sustainable_brands", "organic_materials", "eco_friendly_packaging", "responsible_consumption", "sustainability_research"]
+  },
+  {
+    "question_id": "alex-high-pressure-shopping-a",
+    "suite": "ak",
+    "scope": "A",
+    "event_id": "high-pressure-shopping-format-scope",
+    "question": "Which online shopping experiences currently overwhelm Alex?",
+    "options": {
+      "A": "Carefully building a gift wishlist and comparing prices over time.",
+      "B": "Using a grocery app to search for items from home.",
+      "C": "Writing considered product reviews after making a purchase.",
+      "D": "Rapid live-stream shopping and option-heavy seasonal sales that create urgency, choice overload, and pressure to decide immediately."
+    },
+    "correct_answer": "D",
+    "evidence_indices": [100, 102, 106, 108, 110, 116, 118, 120, 136],
+    "target_error": "specific high-pressure formats generalized to all online shopping",
+    "entity_queries": ["livestream_shopping", "seasonal_sales", "decision_fatigue", "choice_overload", "purchase_pressure"]
+  },
+  {
+    "question_id": "alex-high-pressure-shopping-k",
+    "suite": "ak",
+    "scope": "K",
+    "event_id": "high-pressure-shopping-format-scope",
+    "question": "Which shopping preferences remain valid despite Alex's negative experiences with live-stream and option-heavy sales?",
+    "options": {
+      "A": "She still values deliberate browsing, wishlists, discount codes, price comparisons, grocery apps, product reviews, and thoughtful gift planning.",
+      "B": "She now rejects all online shopping, every discount, and every mobile shopping application.",
+      "C": "She wants all purchases to be made instantly without comparing options.",
+      "D": "She dislikes wishlists and considers planning gifts unhelpful."
+    },
+    "correct_answer": "A",
+    "evidence_indices": [98, 100, 102, 106, 108, 110, 116, 118, 120, 136],
+    "target_error": "local shopping-format dislike expanded to entire online-shopping domain",
+    "entity_queries": ["online_shopping", "wishlists", "discount_codes", "price_comparison", "grocery_apps", "product_reviews", "gift_planning"]
+  }
+]

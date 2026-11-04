@@ -1,0 +1,152 @@
+[
+  {
+    "question_id": "graph-theory-scope",
+    "suite": "graph_errors",
+    "question": "Which statement most accurately describes Kanoa's current relationship with music theory?",
+    "options": {
+      "A": "He completely rejects music theory and will not study it again.",
+      "B": "He prefers abstract theory detached from culture and practice.",
+      "C": "Theory becomes relatable and enjoyable when connected to Pacific music, cultural narratives, and composition.",
+      "D": "He is interested only in Western classical theory."
+    },
+    "correct_answer": "C",
+    "evidence_indices": [22, 24, 51, 52, 170, 171],
+    "target_error": "technical-preference scope inflation",
+    "entity_queries": ["music_theory", "music_learning", "pacific_islander_music", "cultural_background", "mentorship", "composition"]
+  },
+  {
+    "question_id": "graph-audio-course-scope",
+    "suite": "graph_errors",
+    "question": "What is the best interpretation of Kanoa leaving the advanced audio-production course?",
+    "options": {
+      "A": "He no longer likes digital music production.",
+      "B": "He abandoned traditional-modern musical fusion.",
+      "C": "The course intensity did not suit him, but practical production, self-study, mentorship, and music creation can still suit him.",
+      "D": "He now wants only passive music listening."
+    },
+    "correct_answer": "C",
+    "evidence_indices": [92, 93, 95, 105, 106],
+    "target_error": "course withdrawal expanded to whole domain",
+    "entity_queries": ["advanced_audio_production_course", "audio_production", "self_directed_learning", "music_production", "traditional_sounds"]
+  },
+  {
+    "question_id": "graph-collaboration-scope",
+    "suite": "graph_errors",
+    "question": "What is Kanoa's final attitude toward musical collaboration?",
+    "options": {
+      "A": "He refuses every form of musical collaboration.",
+      "B": "He rejects a collaboration that restricts his artistic direction but still values aligned and cross-cultural collaboration.",
+      "C": "He wants other musicians to control his artistic decisions.",
+      "D": "He is no longer interested in music from other cultures."
+    },
+    "correct_answer": "B",
+    "evidence_indices": [157, 159, 176, 177, 179],
+    "target_error": "band conflict generalized to all collaboration",
+    "entity_queries": ["band_collaboration", "music_collaboration", "artistic_direction", "creative_autonomy", "cross_cultural_collaboration", "indian_music_fusion"]
+  },
+  {
+    "question_id": "graph-remix-temporality",
+    "suite": "graph_errors",
+    "question": "How is Kanoa currently balancing remixing and original music?",
+    "options": {
+      "A": "He permanently hates remixing.",
+      "B": "He is temporarily prioritizing original work, although he enjoyed remixing and may return with new ideas.",
+      "C": "He is prioritizing remixing over his own musical identity.",
+      "D": "He no longer creates music."
+    },
+    "correct_answer": "B",
+    "evidence_indices": [173, 174],
+    "target_error": "temporary hiatus stored as permanent dislike",
+    "entity_queries": ["remixing", "remix_hiatus", "original_composition", "personal_projects", "musician_identity"]
+  },
+  {
+    "question_id": "graph-social-scope",
+    "suite": "graph_errors",
+    "question": "Which description best fits Kanoa's social-activity preferences?",
+    "options": {
+      "A": "He avoids all interaction with strangers and all group activities.",
+      "B": "He dislikes loud, intense, or forced settings but enjoys supportive, purposeful, or naturally interactive activities.",
+      "C": "He prefers forced mixers and loud group dancing over supportive discussions.",
+      "D": "He dislikes volunteering, game nights, speed dating, and relationship workshops equally."
+    },
+    "correct_answer": "B",
+    "evidence_indices": [112, 114, 122, 124, 126, 128, 134, 140],
+    "target_error": "single negative social event overgeneralized",
+    "entity_queries": ["social_activities", "salsa_dancing", "social_mixer", "speed_dating", "group_discussions", "volunteering", "game_night"]
+  },
+  {
+    "question_id": "graph-assistant-source-leak",
+    "suite": "graph_errors",
+    "question": "Which media preference did Kanoa explicitly confirm in the conversation?",
+    "options": {
+      "A": "A specific preference for independent films.",
+      "B": "A specific preference for literature.",
+      "C": "A specific preference for theatrical performances.",
+      "D": "A preference for authentic, emotionally nuanced relationship narratives; the other media were assistant suggestions, not confirmed user preferences."
+    },
+    "correct_answer": "D",
+    "evidence_indices": [136, 137],
+    "target_error": "assistant suggestion written as user fact",
+    "entity_queries": ["media_preferences", "romantic_comedy", "authentic_narratives", "independent_films", "literature", "theatre"]
+  },
+  {
+    "question_id": "graph-jam-role-leak",
+    "suite": "graph_errors",
+    "question": "What can be established about Kanoa's role in the jam-session experience?",
+    "options": {
+      "A": "Kanoa explicitly stated that he hosted and organized it.",
+      "B": "Kanoa explicitly stated that he managed every participant.",
+      "C": "Kanoa confirmed participating and creating pieces together, but he did not explicitly confirm that he hosted it.",
+      "D": "Kanoa explicitly stated that he did not attend."
+    },
+    "correct_answer": "C",
+    "evidence_indices": [178, 179],
+    "target_error": "assistant presupposition promoted to user fact",
+    "entity_queries": ["jam_session", "music_collaboration", "hosting", "organizing", "cross_cultural_music", "created_pieces"]
+  },
+  {
+    "question_id": "graph-social-media-domain",
+    "suite": "graph_errors",
+    "question": "Why did taking photographs for social media become stressful for Kanoa?",
+    "options": {
+      "A": "Buying photography equipment created financial pressure.",
+      "B": "The photographs failed to generate income.",
+      "C": "Perfection pressure, curated comparison, and platform expectations removed the joy from taking photos.",
+      "D": "He stated that he dislikes every kind of photography."
+    },
+    "correct_answer": "C",
+    "evidence_indices": [148, 149],
+    "target_error": "social-media experience assigned to consumption and finance",
+    "entity_queries": ["social_media", "photography", "perfection_pressure", "social_comparison", "creative_activities", "consumption_and_finance"]
+  },
+  {
+    "question_id": "graph-fusion-domain",
+    "suite": "graph_errors",
+    "question": "What was the main significance of Kanoa's 2016 fusion concert collaboration?",
+    "options": {
+      "A": "It was mainly a workplace performance review.",
+      "B": "It was mainly a personal-finance activity.",
+      "C": "It expanded his musical and cultural horizons through collaborative exploration of styles and sounds.",
+      "D": "It convinced him to avoid other musicians."
+    },
+    "correct_answer": "C",
+    "evidence_indices": [18, 19],
+    "target_error": "creative collaboration assigned to work and study",
+    "entity_queries": ["fusion_concert", "music_collaboration", "cultural_fusion", "local_musicians", "work_and_study", "artistic_communities"]
+  },
+  {
+    "question_id": "graph-integrated-recommendation",
+    "suite": "graph_errors",
+    "question": "Which music-learning activity is the best fit for Kanoa now?",
+    "options": {
+      "A": "A fast, high-pressure course focused only on abstract technical theory.",
+      "B": "Stopping all theory and production learning permanently.",
+      "C": "Mentored learning that connects Pacific rhythms and cultural stories to theory and an original fusion project.",
+      "D": "Dropping original composition and spending all available time remixing."
+    },
+    "correct_answer": "C",
+    "evidence_indices": [105, 106, 170, 171, 173, 174, 176],
+    "target_error": "integrated downstream recommendation corruption",
+    "entity_queries": ["music_learning", "music_theory", "mentorship", "pacific_islander_music", "original_composition", "cultural_fusion", "audio_production"]
+  }
+]

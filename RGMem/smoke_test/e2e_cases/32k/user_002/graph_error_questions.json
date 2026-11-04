@@ -1,0 +1,152 @@
+[
+  {
+    "question_id": "alex-graph-collaboration-scope",
+    "suite": "graph_errors",
+    "question": "What can the conversation establish about Alex's current preference for creative collaboration?",
+    "options": {
+      "A": "Alex rejects collaboration and intends to produce all literary merchandise alone.",
+      "B": "Alex is enthusiastic about one current partnership with local artists, but this does not establish that every activity should be collaborative or that solitary work should be avoided.",
+      "C": "Alex stated that she regularly partners with artists in every area of work and study.",
+      "D": "Alex has abandoned both literary merchandise and community events."
+    },
+    "correct_answer": "B",
+    "evidence_indices": [162, 164],
+    "target_error": "single successful collaboration expanded into a global anti-individual preference",
+    "entity_queries": ["work_and_study", "partnership_with_local_artists", "community_engagement", "creative_collaboration", "personal_hobbies", "local_artists"]
+  },
+  {
+    "question_id": "alex-graph-discount-code-state",
+    "suite": "graph_errors",
+    "question": "What is explicitly confirmed about Alex's discount codes and electronics shopping?",
+    "options": {
+      "A": "She rejected discount codes and bought electronics only at full price.",
+      "B": "She explicitly confirmed redeeming every collected code to complete several electronics purchases.",
+      "C": "She collected codes, followed newsletters and social-media offers, and compared gadget prices; the conversation does not explicitly confirm that the codes were redeemed for completed electronics purchases.",
+      "D": "She collected the codes only for friends and had no personal interest in technology deals."
+    },
+    "correct_answer": "C",
+    "evidence_indices": [102, 110],
+    "target_error": "discount-code collection escalated into code use and completed electronics purchases",
+    "entity_queries": ["discount_code_collection", "electronics_purchases", "shopping", "newsletter_subscription_for_deals", "social_media_monitoring_for_offers", "tech_gadgets"]
+  },
+  {
+    "question_id": "alex-graph-eco-product-state",
+    "suite": "graph_errors",
+    "question": "What did Alex explicitly report about sustainable brands and eco-friendly products?",
+    "options": {
+      "A": "She explored sustainable brands, found interesting products, and valued their materials and packaging, but did not explicitly say that she acquired those products.",
+      "B": "She bought every eco-friendly product she found and added all of them to her possessions.",
+      "C": "She rejected sustainable brands because environmental values no longer mattered to her.",
+      "D": "She completed a formal supply-chain audit and verified every sustainability claim."
+    },
+    "correct_answer": "A",
+    "evidence_indices": [104, 122],
+    "target_error": "product discovery and value alignment promoted to product acquisition",
+    "entity_queries": ["sustainable_consumption", "support_for_sustainable_brands", "eco-friendly_products", "personal_possessions", "environmental_responsibility", "brand_sustainability_research"]
+  },
+  {
+    "question_id": "alex-graph-gift-beneficiary",
+    "suite": "graph_errors",
+    "question": "For whom were the concert tickets in Alex's birthday wishlist intended?",
+    "options": {
+      "A": "They were tickets Alex had already used to attend a concert herself.",
+      "B": "They were tickets for a book-club organizer as payment for leading discussions.",
+      "C": "They were tickets Alex planned to resell through an online auction.",
+      "D": "They were possible birthday gifts for friends, included alongside gadgets, accessories, and other experiences."
+    },
+    "correct_answer": "D",
+    "evidence_indices": [118],
+    "target_error": "gift beneficiary lost and friend-directed tickets represented as the user's own attendance",
+    "entity_queries": ["gift_planning", "birthday_gift_wishlist", "concert_attendance", "friends", "events_and_experiences", "shopping_wishlist"]
+  },
+  {
+    "question_id": "alex-graph-gatsby-state",
+    "suite": "graph_errors",
+    "question": "What can be established about Alex and the first edition of The Great Gatsby?",
+    "options": {
+      "A": "Alex explicitly said she finished reading it and wrote a detailed review.",
+      "B": "Alex acquired the first edition and was thrilled to add it to her shelf; the conversation does not explicitly confirm that she read it.",
+      "C": "Alex borrowed it from a library and returned it without adding it to her collection.",
+      "D": "Alex decided that first editions had no historical or personal value."
+    },
+    "correct_answer": "B",
+    "evidence_indices": [165, 167],
+    "target_error": "book acquisition promoted to a completed reading event",
+    "entity_queries": ["first_edition_of_the_great_gatsby", "books", "book_collection", "reading", "first_edition_novels_collection", "personal_possessions"]
+  },
+  {
+    "question_id": "alex-graph-moby-dick-missing-write",
+    "suite": "graph_errors",
+    "question": "Which positive late-session book-club experience did Alex report before her final decision to step back from structured clubs?",
+    "options": {
+      "A": "She organized a speed-reading contest and rejected all classic literature.",
+      "B": "She stopped attending every literary discussion before any book was selected.",
+      "C": "She became involved in a classic-literature club that was reading Moby Dick and described the discussions as insightful.",
+      "D": "She joined a technology-buying group that discussed electronic devices."
+    },
+    "correct_answer": "C",
+    "evidence_indices": [155, 157, 168],
+    "target_error": "late Moby Dick and classic-club evidence omitted by a partial L1 relationship write",
+    "entity_queries": ["classic_literature_book_club", "moby_dick", "literary_discussions", "structured_book_clubs", "classic_literature", "reading"]
+  },
+  {
+    "question_id": "alex-graph-blog-trajectory",
+    "suite": "graph_errors",
+    "question": "Which sequence best describes Alex's book-blogging and review-writing trajectory?",
+    "options": {
+      "A": "She initially found review writing useful, later experienced pressure and rejected rigid reviews, and finally restarted a blog centered on emotional responses and self-understanding.",
+      "B": "She consistently rejected all writing about books and never restarted a blog.",
+      "C": "She moved from emotional blogging to increasingly rigid formal reviews because external pressure improved her creativity.",
+      "D": "She replaced every literary activity with product reviews and shopping forums."
+    },
+    "correct_answer": "A",
+    "evidence_indices": [5, 32, 51, 53, 72, 150, 152],
+    "target_error": "one preference trajectory fragmented across blogging, book_blogging, and formal-review nodes",
+    "entity_queries": ["blogging", "book_blogging", "book_review_writing", "review_writing_abandonment", "book_blog_emotional_response_series", "reflective_writing"]
+  },
+  {
+    "question_id": "alex-graph-flash-sale-conditionality",
+    "suite": "graph_errors",
+    "question": "Which statement best captures Alex's experience with time-pressured online shopping?",
+    "options": {
+      "A": "Every urgent shopping format was negative, including the specific flash sale where she bought discounted items.",
+      "B": "Every urgent shopping format was positive, so later choice overload and exhaustion should be ignored.",
+      "C": "She rejected all online discounts, wishlists, and price comparisons after one difficult event.",
+      "D": "She enjoyed one specific flash sale, but later found fast live-stream shopping and option-heavy seasonal sales overwhelming; the preference is conditional rather than globally positive or negative."
+    },
+    "correct_answer": "D",
+    "evidence_indices": [106, 120, 136],
+    "target_error": "positive flash-sale event generalized despite later pressure-sensitive negative experiences",
+    "entity_queries": ["flash_sale_participation", "livestream_shopping", "seasonal_sales_trend_monitoring", "decision_fatigue", "choice_overload", "online_shopping"]
+  },
+  {
+    "question_id": "alex-graph-final-profile-scope",
+    "suite": "graph_errors",
+    "question": "Which statement best represents Alex's final literary and community profile?",
+    "options": {
+      "A": "She wants every literary activity to be highly structured, collaborative, and socially demanding.",
+      "B": "She has withdrawn from literature, local libraries, community events, and creative work.",
+      "C": "She values literature, literacy volunteering, emotional writing, and selected collaboration, while also preferring self-paced reading and lower-pressure participation over rigid obligations.",
+      "D": "She now treats shopping and electronics as her only meaningful interests."
+    },
+    "correct_answer": "C",
+    "evidence_indices": [145, 147, 149, 150, 152, 162, 164, 168, 170],
+    "target_error": "round-5 profile changes not fully propagated to the dirty top-level user summary",
+    "entity_queries": ["user", "literature_and_writing", "values_and_beliefs", "work_and_study", "social_relationships", "library_volunteering", "leisurely_reading"]
+  },
+  {
+    "question_id": "alex-graph-integrated-recommendation",
+    "suite": "graph_errors",
+    "question": "Which recommendation best fits Alex's final preferences while preserving the scope of her updates?",
+    "options": {
+      "A": "A rigid weekly club with mandatory deadlines, formal reviews, and high-pressure public discussion.",
+      "B": "A flexible self-paced reading plan with optional substantive discussion and an emotional-response blog, while leaving room for selected community and artist collaboration.",
+      "C": "Stopping all literary discussion, volunteering, blogging, and collaboration permanently.",
+      "D": "Replacing reading with rapid live-stream shopping and immediate purchase decisions."
+    },
+    "correct_answer": "B",
+    "evidence_indices": [150, 152, 155, 157, 162, 164, 168, 170],
+    "target_error": "integrated downstream recommendation corrupted by scope inflation, missing late evidence, and stale summary propagation",
+    "entity_queries": ["reading", "leisurely_reading", "book_blogging", "reflective_writing", "literary_discussions", "structured_book_clubs", "partnership_with_local_artists"]
+  }
+]

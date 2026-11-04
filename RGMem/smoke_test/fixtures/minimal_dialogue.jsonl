@@ -1,0 +1,7 @@
+{"user_id":"TEMPLATE_USER","role_id":91001,"role":"user","content":"我长期喜欢科幻电影，尤其偏爱太空探索和人工智能主题。","created_at":"2026-10-01T10:00:00+08:00","session_id":"TEMPLATE_SESSION","user_name":"冒烟测试用户"}
+{"user_id":"TEMPLATE_USER","role_id":91001,"role":"assistant","content":"明白了，你长期偏好科幻题材，尤其关注太空探索和人工智能。","created_at":"2026-10-01T10:01:00+08:00","session_id":"TEMPLATE_SESSION","assistant_name":"冒烟测试助手"}
+{"user_id":"TEMPLATE_USER","role_id":91001,"role":"user","content":"《星际穿越》和《银翼杀手》都是我会反复观看的电影。","created_at":"2026-10-01T10:02:00+08:00","session_id":"TEMPLATE_SESSION","user_name":"冒烟测试用户"}
+{"user_id":"TEMPLATE_USER","role_id":91001,"role":"assistant","content":"这两部作品分别突出太空探索和人工智能议题。","created_at":"2026-10-01T10:03:00+08:00","session_id":"TEMPLATE_SESSION","assistant_name":"冒烟测试助手"}
+{"user_id":"TEMPLATE_USER","role_id":91001,"role":"user","content":"以后推荐电影时，请优先推荐有思想深度的科幻片。","created_at":"2026-10-01T10:04:00+08:00","session_id":"TEMPLATE_SESSION","user_name":"冒烟测试用户"}
+{"user_id":"TEMPLATE_USER","role_id":91001,"role":"assistant","content":"好的，我会优先考虑有思想深度的科幻电影。这个话题先聊到这里。","created_at":"2026-10-01T10:05:00+08:00","session_id":"TEMPLATE_SESSION","assistant_name":"冒烟测试助手"}
+

@@ -1,0 +1,80 @@
+{
+  "probe_version": 1,
+  "dataset": "PersonaMem-32K",
+  "dataset_user_number": 1,
+  "persona_id": 0,
+  "persona_name": "Kanoa Manu",
+  "status": "candidate_requires_human_review",
+  "gold_labels_active": false,
+  "generic_query": "How have the user's preferences about music theory, podcasting, album reviews, audio production, collaboration, remixing, and original composition changed over time?",
+  "instructions": [
+    "Review each candidate event before using it to judge RGMem.",
+    "A contains only preferences that the cited evidence should revise.",
+    "K contains preferences that should remain valid outside that scope.",
+    "This file is never passed to L0 or L1 generation prompts."
+  ],
+  "events": [
+    {
+      "event_id": "theory-cultural-reengagement",
+      "observation_round": 2,
+      "s_minus_indices": [22, 24],
+      "revision_evidence_indices": [51, 52],
+      "candidate_A": [
+        "Music theory becomes appealing when grounded in Pacific music and composition practice."
+      ],
+      "candidate_K": [
+        "Interest in original composition and Pacific/electronic fusion remains valid.",
+        "Preferences about podcasting, reviews, collaboration, and remixing are not revised by this event."
+      ],
+      "probe_A": "Does Kanoa currently want to study music theory, and under what conditions?",
+      "probe_K": "What music-creation and cultural-fusion interests remain unchanged?",
+      "notes": "Index 51 is an assistant-role record containing embedded 'User:' text; preserve this source anomaly in interpretation."
+    },
+    {
+      "event_id": "advanced-audio-course-withdrawal",
+      "observation_round": 3,
+      "s_minus_indices": [70, 71, 92, 93],
+      "revision_evidence_indices": [105, 107],
+      "candidate_A": [
+        "Kanoa withdraws from the advanced audio-production course because its complexity is overwhelming."
+      ],
+      "candidate_K": [
+        "This does not by itself erase all interest in practical audio tools or music creation.",
+        "Music theory, podcasting, reviews, collaboration, and cultural fusion remain outside this revision scope."
+      ],
+      "probe_A": "Does Kanoa want to continue the advanced audio-production course?",
+      "probe_K": "Which practical production and broader music interests should still be retained?"
+    },
+    {
+      "event_id": "band-collaboration-conflict",
+      "observation_round": 5,
+      "s_minus_indices": [83, 84],
+      "revision_evidence_indices": [159],
+      "candidate_A": [
+        "The current band collaboration became discouraging because of artistic-direction conflict."
+      ],
+      "candidate_K": [
+        "The evidence does not justify a global dislike of all collaboration.",
+        "Cross-cultural workshops and collaboration with other musicians can remain positive."
+      ],
+      "probe_A": "How does Kanoa feel about continuing the current band collaboration?",
+      "probe_K": "Does Kanoa still value other structured or cross-cultural collaborations?"
+    },
+    {
+      "event_id": "remix-hiatus-original-priority",
+      "observation_round": 5,
+      "s_minus_indices": [155, 157],
+      "revision_evidence_indices": [173, 174],
+      "candidate_A": [
+        "Kanoa pauses remixing so original compositions and personal projects receive priority."
+      ],
+      "candidate_K": [
+        "His broader interest in cultural fusion remains valid.",
+        "The hiatus is not evidence that he never enjoyed remixing or will never return to it.",
+        "Music theory and cross-cultural learning remain outside this revision scope."
+      ],
+      "probe_A": "What is Kanoa's current priority between remixing and original composition?",
+      "probe_K": "Which cultural-fusion and learning interests remain valid during the remix hiatus?"
+    }
+  ]
+}

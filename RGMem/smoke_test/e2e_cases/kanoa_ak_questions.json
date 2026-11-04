@@ -1,0 +1,138 @@
+[
+  {
+    "question_id": "ak-theory-a",
+    "suite": "ak",
+    "scope": "A",
+    "event_id": "theory-cultural-reengagement",
+    "question": "What is Kanoa's current attitude toward studying music theory?",
+    "options": {
+      "A": "He rejects all music theory regardless of how it is taught.",
+      "B": "He is interested when theory is connected to Pacific music, cultural narratives, and composition practice.",
+      "C": "He now prefers theory only as abstract analysis detached from music-making.",
+      "D": "The conversation contains no evidence about his attitude toward theory."
+    },
+    "correct_answer": "B",
+    "evidence_indices": [22, 24, 51, 52, 170, 171],
+    "target_error": "conditional preference revision",
+    "entity_queries": ["music_theory", "music_learning", "pacific_islander_music", "cultural_background", "mentorship", "composition"]
+  },
+  {
+    "question_id": "ak-theory-k",
+    "suite": "ak",
+    "scope": "K",
+    "event_id": "theory-cultural-reengagement",
+    "question": "Which preference remains valid outside Kanoa's change in attitude toward music theory?",
+    "options": {
+      "A": "His interest in original composition and Pacific/electronic cultural fusion remains valid.",
+      "B": "He must resume podcasting because theory became enjoyable.",
+      "C": "He must resume public album reviews because theory became enjoyable.",
+      "D": "His theory experience proves that every technical course suits him."
+    },
+    "correct_answer": "A",
+    "evidence_indices": [41, 45, 51, 52],
+    "target_error": "out-of-scope preference preservation",
+    "entity_queries": ["original_composition", "music_creation", "pacific_islander_music_fusion", "electronic_music", "music_theory"]
+  },
+  {
+    "question_id": "ak-audio-course-a",
+    "suite": "ak",
+    "scope": "A",
+    "event_id": "advanced-audio-course-withdrawal",
+    "question": "Does Kanoa want to continue the advanced audio-production course described in the conversation?",
+    "options": {
+      "A": "Yes, he completed it and wants a harder version.",
+      "B": "No. He dropped out after the first week because the complexity and volume were overwhelming.",
+      "C": "No. He permanently rejected every form of audio production.",
+      "D": "The conversation never states whether he continued."
+    },
+    "correct_answer": "B",
+    "evidence_indices": [92, 105, 106],
+    "target_error": "local activity withdrawal",
+    "entity_queries": ["advanced_audio_production_course", "formal_education", "audio_production", "course_withdrawal", "skill_development"]
+  },
+  {
+    "question_id": "ak-audio-course-k",
+    "suite": "ak",
+    "scope": "K",
+    "event_id": "advanced-audio-course-withdrawal",
+    "question": "What should still be retained after Kanoa leaves the advanced audio-production course?",
+    "options": {
+      "A": "He has no remaining interest in creating music or using production tools.",
+      "B": "He may still pursue practical production, self-study, mentorship, and culturally grounded music creation.",
+      "C": "He should avoid all technology connected to music.",
+      "D": "He should stop blending traditional and modern sounds."
+    },
+    "correct_answer": "B",
+    "evidence_indices": [93, 95, 105, 106, 161, 163],
+    "target_error": "course-to-domain scope inflation",
+    "entity_queries": ["audio_production", "self_directed_learning", "mentorship", "music_production", "traditional_sounds", "digital_production"]
+  },
+  {
+    "question_id": "ak-band-conflict-a",
+    "suite": "ak",
+    "scope": "A",
+    "event_id": "band-collaboration-conflict",
+    "question": "How does Kanoa feel about the band collaboration affected by disagreements over artistic direction?",
+    "options": {
+      "A": "He felt stifled and discouraged and wanted more autonomy over his creative work.",
+      "B": "He thought the disagreements improved the collaboration and wanted less autonomy.",
+      "C": "He did not care about the artistic direction.",
+      "D": "He wanted the bandmates to make every artistic decision."
+    },
+    "correct_answer": "A",
+    "evidence_indices": [157, 159],
+    "target_error": "specific collaboration revision",
+    "entity_queries": ["band_collaboration", "music_collaboration", "artistic_direction", "creative_autonomy", "independent_projects"]
+  },
+  {
+    "question_id": "ak-band-conflict-k",
+    "suite": "ak",
+    "scope": "K",
+    "event_id": "band-collaboration-conflict",
+    "question": "Does the band conflict mean Kanoa no longer values any musical collaboration?",
+    "options": {
+      "A": "Yes. It establishes a global dislike of every collaboration.",
+      "B": "No. He still values aligned, culturally meaningful, and cross-cultural collaboration, including work with Indian musicians.",
+      "C": "Yes. He also stopped learning from musicians from other cultures.",
+      "D": "The conversation says he has never collaborated successfully."
+    },
+    "correct_answer": "B",
+    "evidence_indices": [18, 19, 159, 176, 177, 179],
+    "target_error": "local-to-global collaboration overgeneralization",
+    "entity_queries": ["music_collaboration", "band_collaboration", "cross_cultural_collaboration", "indian_music_fusion", "artistic_direction"]
+  },
+  {
+    "question_id": "ak-remix-hiatus-a",
+    "suite": "ak",
+    "scope": "A",
+    "event_id": "remix-hiatus-original-priority",
+    "question": "What is Kanoa's current priority between remixing and original composition?",
+    "options": {
+      "A": "He is prioritizing original compositions and personal projects while taking a hiatus from remixing.",
+      "B": "He is abandoning original composition to remix full time.",
+      "C": "He permanently dislikes remixing and denies ever enjoying it.",
+      "D": "He has stopped making music entirely."
+    },
+    "correct_answer": "A",
+    "evidence_indices": [173, 174],
+    "target_error": "temporal priority update",
+    "entity_queries": ["remixing", "remix_hiatus", "original_composition", "personal_projects", "music_creation"]
+  },
+  {
+    "question_id": "ak-remix-hiatus-k",
+    "suite": "ak",
+    "scope": "K",
+    "event_id": "remix-hiatus-original-priority",
+    "question": "Which preference remains valid during Kanoa's remix hiatus?",
+    "options": {
+      "A": "His interest in cultural fusion and cross-cultural music learning remains valid.",
+      "B": "He now rejects all traditional sounds.",
+      "C": "He no longer wants to learn from other musical cultures.",
+      "D": "He considers every past remix experience a mistake."
+    },
+    "correct_answer": "A",
+    "evidence_indices": [173, 176, 177, 181],
+    "target_error": "hiatus scope preservation",
+    "entity_queries": ["cultural_fusion", "cross_cultural_learning", "indian_music_fusion", "remixing", "traditional_sounds"]
+  }
+]

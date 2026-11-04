@@ -1,0 +1,179 @@
+{
+  "probe_version": 1,
+  "dataset": "PersonaMem-32K",
+  "dataset_user_number": 2,
+  "persona_id": 1,
+  "persona_name": "Alex Martinez",
+  "status": "candidate_requires_human_review",
+  "gold_labels_active": false,
+  "generic_query": "How have Alex's preferences about indie bookstores, book blogging and reviews, reading marathons, classic literature and structured book clubs, literary podcasts, book-themed merchandise, recommendation formats, large festivals, sustainable shopping, and high-pressure online shopping changed over time?",
+  "instructions": [
+    "Review each candidate event before using it to judge RGMem.",
+    "A contains only preferences that the cited user-authored evidence should revise.",
+    "K contains preferences that should remain valid outside that revision scope.",
+    "Do not promote assistant suggestions into user preferences unless Alex explicitly confirms them.",
+    "This file is never passed to L0 or L1 generation prompts."
+  ],
+  "events": [
+    {
+      "event_id": "indie-bookstore-final-reversal",
+      "observation_round": 5,
+      "s_minus_indices": [26, 49, 78, 80],
+      "revision_evidence_indices": [145],
+      "candidate_A": [
+        "Alex no longer considers indie bookstores an ideal fit because the intense personal connections and social expectations interfere with relaxed browsing."
+      ],
+      "candidate_K": [
+        "Alex still values local libraries, literacy work, local authors, and literary community involvement in settings that do not create the same social pressure.",
+        "The evidence does not establish a preference for large chain bookstores."
+      ],
+      "probe_A": "Are indie bookstores currently a good fit for Alex, and what changed her view?",
+      "probe_K": "Does this change imply that Alex dislikes all local literary spaces or now prefers large chain bookstores?",
+      "notes": "The trajectory is negative at index 26, strongly positive at 49/78/80, then negative again at 145. Assistant index 146 proposes larger chain stores, but Alex never confirms that suggestion; it must not become a user preference."
+    },
+    {
+      "event_id": "book-blog-emotional-reengagement",
+      "observation_round": 5,
+      "s_minus_indices": [32, 51, 53, 72],
+      "revision_evidence_indices": [150, 152],
+      "candidate_A": [
+        "Alex has restarted her book blog and currently values writing about emotional responses to literature as a tool for reflection and self-understanding."
+      ],
+      "candidate_K": [
+        "Restarting an emotionally focused blog does not prove that Alex has resumed rigid, formal book-review writing.",
+        "Her preference for authentic, flexible literary expression rather than formulaic review formats remains relevant."
+      ],
+      "probe_A": "What is Alex's current attitude toward book blogging, and what kind of writing now feels worthwhile?",
+      "probe_K": "Does the renewed blog mean that Alex now wants to return to formal, formula-driven book reviews?",
+      "notes": "Keep 'book blog' and 'formal book review' separate. Index 53 explicitly rejects reviews as creatively limiting, while 150/152 specifically restore an emotionally reflective blog."
+    },
+    {
+      "event_id": "reading-marathon-final-withdrawal",
+      "observation_round": 3,
+      "s_minus_indices": [28, 38, 63],
+      "revision_evidence_indices": [76],
+      "candidate_A": [
+        "Alex opts out of future reading marathons because keeping pace is overwhelming and she prefers leisurely reading."
+      ],
+      "candidate_K": [
+        "The positive charity-marathon experience remains part of her history, but it does not override her later decision to stop future marathons.",
+        "Avoiding reading marathons is not evidence that Alex dislikes community service or all shared literary activities."
+      ],
+      "probe_A": "Does Alex currently want to join future reading marathons, and why?",
+      "probe_K": "Does her withdrawal from marathons mean she no longer values charity, community involvement, or shared literary experiences?",
+      "notes": "The charity setting temporarily made a marathon positive at index 63, but index 76 is the later explicit current preference."
+    },
+    {
+      "event_id": "classic-literature-versus-structured-club",
+      "observation_round": 5,
+      "s_minus_indices": [34, 59, 94, 96, 155, 157],
+      "revision_evidence_indices": [168, 170],
+      "candidate_A": [
+        "Alex is stepping back from structured book-club settings because schedules, rigidity, and discussion obligations reduce her enjoyment of reading."
+      ],
+      "candidate_K": [
+        "Alex's appreciation for classic literature and the insights she gained from discussing Moby Dick should not be erased.",
+        "Rejecting structured book clubs is not a global rejection of literary discussion, classic works, or casual conversation about books."
+      ],
+      "probe_A": "What is Alex's current preference regarding structured book clubs?",
+      "probe_K": "Does stepping back from structured clubs mean Alex now dislikes classic literature or all discussion of books?",
+      "notes": "This is a scope-sensitive update: the final revision targets the structured setting, not classic literature itself."
+    },
+    {
+      "event_id": "storytelling-podcast-reengagement",
+      "observation_round": 5,
+      "s_minus_indices": [17, 61, 92],
+      "revision_evidence_indices": [158, 160],
+      "candidate_A": [
+        "Alex has renewed interest in a storytelling podcast that combines literary analysis with writing advice and has even hosted an author episode."
+      ],
+      "candidate_K": [
+        "Her earlier criticism of shallow book-podcast discussions remains a quality condition rather than a rejection of every podcast.",
+        "Her preference for genuine, substantive dialogue about literature remains compatible with the new podcast interest."
+      ],
+      "probe_A": "Does Alex currently enjoy literary podcasts, and what kind of podcast changed her mind?",
+      "probe_K": "Should the renewed podcast interest erase her preference for depth and genuine dialogue?",
+      "notes": "The relevant distinction is not podcast versus no podcast, but shallow detached discussion versus dynamic storytelling, writing insight, and author dialogue."
+    },
+    {
+      "event_id": "book-merchandise-collaborative-return",
+      "observation_round": 5,
+      "s_minus_indices": [36, 55, 57, 82],
+      "revision_evidence_indices": [153, 162, 164],
+      "candidate_A": [
+        "Alex has returned to book-themed merchandise through custom bookmarks and collaboration with local artists and is currently enthusiastic about the work."
+      ],
+      "candidate_K": [
+        "Her earlier concern about pressure, quality, demand, and authenticity remains an important condition on how the merchandise work should be organized.",
+        "The renewed collaborative format does not imply that every form of book-themed visual art or solo merchandise production now suits her."
+      ],
+      "probe_A": "What is Alex's current attitude toward creating book-themed merchandise, and what format is working now?",
+      "probe_K": "Does the collaborative return erase her earlier concerns about production pressure and authenticity?",
+      "notes": "This is a conditional return, not a simple permanent positive flip: the later evidence highlights custom products, local-artist partnership, and collaborative brainstorming."
+    },
+    {
+      "event_id": "formal-lists-to-personalized-dialogue",
+      "observation_round": 2,
+      "s_minus_indices": [17, 19, 21],
+      "revision_evidence_indices": [65],
+      "candidate_A": [
+        "Alex has stopped curating formal book lists and now prefers giving personalized recommendations through live discussion."
+      ],
+      "candidate_K": [
+        "She still enjoys helping other readers discover books and making recommendations.",
+        "The change concerns the formal static-list format, not the underlying desire to support readers or share literature."
+      ],
+      "probe_A": "Does Alex currently prefer formal book lists or personalized recommendations in conversation?",
+      "probe_K": "Has Alex stopped wanting to recommend books or help other readers altogether?",
+      "notes": "The update changes the delivery format while preserving the underlying pro-social recommendation goal."
+    },
+    {
+      "event_id": "large-literature-festival-withdrawal",
+      "observation_round": 3,
+      "s_minus_indices": [7],
+      "revision_evidence_indices": [87],
+      "candidate_A": [
+        "Alex plans to skip future large literature festivals because crowds, chaos, and long lines prevent meaningful engagement."
+      ],
+      "candidate_K": [
+        "Her interest in authors, interviews, literary learning, and smaller community events remains valid.",
+        "The negative update is about large crowded festivals, not all cultural or literary events."
+      ],
+      "probe_A": "Would Alex currently choose another large literature festival, and why or why not?",
+      "probe_K": "Does avoiding large festivals mean Alex no longer wants author interaction or smaller literary events?",
+      "notes": "Index 87 explicitly contrasts the chaotic large festival with the nuance available in smaller venues."
+    },
+    {
+      "event_id": "sustainable-values-versus-research-burden",
+      "observation_round": 4,
+      "s_minus_indices": [104],
+      "revision_evidence_indices": [122],
+      "candidate_A": [
+        "Alex finds detailed independent research into brand sustainability too complicated and overwhelming."
+      ],
+      "candidate_K": [
+        "Her interest in sustainable brands, organic materials, low-waste packaging, and environmentally responsible purchasing remains valid.",
+        "Difficulty evaluating sustainability claims is not evidence that she no longer cares about sustainability."
+      ],
+      "probe_A": "How does Alex feel about personally researching the sustainability of brands?",
+      "probe_K": "Does difficulty with sustainability research mean Alex no longer values sustainable products or eco-friendly brands?",
+      "notes": "This probe separates a stable value preference from the burden of verifying that value in a complex information environment."
+    },
+    {
+      "event_id": "high-pressure-shopping-format-scope",
+      "observation_round": 4,
+      "s_minus_indices": [100, 102, 106, 110, 116, 118],
+      "revision_evidence_indices": [120, 136],
+      "candidate_A": [
+        "Alex dislikes high-pressure shopping formats that combine rapid presentation, too many options, urgency, and instantaneous purchase decisions."
+      ],
+      "candidate_K": [
+        "She still values deliberate online browsing, wishlists, discount codes, price comparisons, grocery apps, and thoughtful gift planning.",
+        "A negative live-stream or seasonal-sale experience should not be generalized into a dislike of all online shopping or all discounts."
+      ],
+      "probe_A": "Which online shopping formats currently overwhelm Alex, and what features create the problem?",
+      "probe_K": "Which lower-pressure online shopping activities does Alex still find useful or enjoyable?",
+      "notes": "Index 106 records a positive flash-sale experience, so the final representation should preserve the conditional nature of the preference rather than flattening every time-limited discount into a dislike."
+    }
+  ]
+}
